@@ -60,7 +60,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_FizzBuzz_when_count_off_given_number_with_number_multiple_of_3_and_5(){
         //given
-        int order = 30;
+        int order = 60;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
@@ -104,7 +104,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_Fizz_when_count_off_given_number_with_number_contain_3(){
         //given
-        int order = 123;
+        int order = 30;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
