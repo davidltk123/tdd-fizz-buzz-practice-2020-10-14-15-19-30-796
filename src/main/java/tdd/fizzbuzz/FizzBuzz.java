@@ -10,7 +10,9 @@ public class FizzBuzz {
     private static final String WHIZZ = "Whizz";
 
     public String countOff(int order){
-        if(order % modulo_3 == 0){
+        if(order % 15 == 0){
+            return "FizzBuzz";
+        } else if(order % modulo_3 == 0){
             return FIZZ;
         }else if(order % modulo_5 == 0){
             return BUZZ;
