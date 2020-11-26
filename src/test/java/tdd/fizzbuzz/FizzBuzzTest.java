@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
+
+    public static final String FIZZ = "Fizz";
+
     @Test
     void should_return_string_order_number_when_count_off_given_number_with_normal_case(){
         //given
@@ -23,6 +26,6 @@ public class FizzBuzzTest {
         //when
         String actual = fizzbuzz.countOff(order);
         //then
-        assertEquals("Fizz",actual);
+        assertEquals(FIZZ,actual);
     }
 }
