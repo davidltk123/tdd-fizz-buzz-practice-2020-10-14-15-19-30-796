@@ -27,7 +27,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_Fizz_when_count_off_given_number_with_number_multiple_of_3(){
         //given
-        int order = 3;
+        int order = 9;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
@@ -38,7 +38,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_Buzz_when_count_off_given_number_with_number_multiple_of_5(){
         //given
-        int order = 5;
+        int order = 10;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
@@ -49,7 +49,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_Whizz_when_count_off_given_number_with_number_multiple_of_7(){
         //given
-        int order = 7;
+        int order = 14;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
@@ -60,7 +60,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_FizzBuzz_when_count_off_given_number_with_number_multiple_of_3_and_5(){
         //given
-        int order = 15;
+        int order = 30;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
@@ -71,7 +71,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_FizzWhizz_when_count_off_given_number_with_number_multiple_of_3_and_7(){
         //given
-        int order = 21;
+        int order = 42;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
@@ -82,7 +82,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_BuzzWhizz_when_count_off_given_number_with_number_multiple_of_5_and_7(){
         //given
-        int order = 35;
+        int order = 70;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
@@ -93,7 +93,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_FizzBuzzWhizz_when_count_off_given_number_with_number_multiple_of_3_and_5_and_7(){
         //given
-        int order = 105;
+        int order = 210;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String actual = fizzbuzz.countOff(order);
