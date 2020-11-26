@@ -9,6 +9,7 @@ public class FizzBuzzTest {
     private static final String BUZZ = "Buzz";
     private static final String WHIZZ = "Whizz";
     private static final String FIZZ_BUZZ = "FizzBuzz";
+    public static final String FIZZ_WHIZZ = "FizzWhizz";
 
     @Test
     void should_return_string_order_number_when_count_off_given_number_with_normal_case(){
@@ -73,6 +74,6 @@ public class FizzBuzzTest {
         //when
         String actual = fizzbuzz.countOff(order);
         //then
-        assertEquals("FizzWhizz",actual);
+        assertEquals(FIZZ_WHIZZ,actual);
     }
 }
