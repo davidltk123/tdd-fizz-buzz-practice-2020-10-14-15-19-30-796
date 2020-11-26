@@ -100,4 +100,15 @@ public class FizzBuzzTest {
         //then
         assertEquals(FIZZ_BUZZ_WHIZZ,actual);
     }
+
+    @Test
+    void should_return_Fizz_when_count_off_given_number_with_number_contain_3(){
+        //given
+        int order = 123;
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String actual = fizzbuzz.countOff(order);
+        //then
+        assertEquals(FIZZ,actual);
+    }
 }
