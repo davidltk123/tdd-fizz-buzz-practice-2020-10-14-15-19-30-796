@@ -14,10 +14,7 @@ public class FizzBuzz {
     private static final String FIZZ_BUZZ_WHIZZ = "FizzBuzzWhizz";
 
     public String countOff(int order) {
-        String orderString = String.valueOf(order);
-        if(orderString.contains("3")){
-            return FIZZ;
-        } else if (order % MODULO_3 == 0 && order % MODULO_5 == 0 && order % MODULO_7 == 0) {
+        if (order % MODULO_3 == 0 && order % MODULO_5 == 0 && order % MODULO_7 == 0) {
             return FIZZ_BUZZ_WHIZZ;
         } else if (order % MODULO_3 == 0 && order % MODULO_5 == 0) {
             return FIZZ_BUZZ;
@@ -32,6 +29,6 @@ public class FizzBuzz {
         } else if (order % MODULO_7 == 0) {
             return WHIZZ;
         }
-        return orderString;
+        return String.valueOf(order);
     }
 }
