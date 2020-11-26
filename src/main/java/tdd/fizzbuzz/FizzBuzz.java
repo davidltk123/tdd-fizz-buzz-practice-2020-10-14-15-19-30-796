@@ -12,6 +12,8 @@ public class FizzBuzz {
             return FIZZ;
         }else if(order % modulo_5 == 0){
             return BUZZ;
+        }else if(order % 7 == 0){
+            return "Whizz";
         }
         return String.valueOf(order);
     }
