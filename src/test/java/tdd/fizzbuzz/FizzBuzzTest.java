@@ -55,7 +55,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_Whizz_when_count_off_given_number_with_number_multiple_of_3_and_5(){
+    void should_return_FizzBuzz_when_count_off_given_number_with_number_multiple_of_3_and_5(){
         //given
         int order = 15;
         FizzBuzz fizzbuzz = new FizzBuzz();
@@ -63,5 +63,16 @@ public class FizzBuzzTest {
         String actual = fizzbuzz.countOff(order);
         //then
         assertEquals(FIZZ_BUZZ,actual);
+    }
+
+    @Test
+    void should_return_FizzWhizz_when_count_off_given_number_with_number_multiple_of_3_and_7(){
+        //given
+        int order = 21;
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String actual = fizzbuzz.countOff(order);
+        //then
+        assertEquals("FizzWhizz",actual);
     }
 }
