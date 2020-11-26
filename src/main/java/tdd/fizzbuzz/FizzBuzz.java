@@ -18,6 +18,8 @@ public class FizzBuzz {
             return FIZZ_BUZZ;
         } else if (order % MODULO_21 == 0) {
             return FIZZ_WHIZZ;
+        } else if (order % 35 == 0) {
+            return "BuzzWhizz";
         } else if (order % modulo_3 == 0) {
             return FIZZ;
         } else if (order % modulo_5 == 0) {
