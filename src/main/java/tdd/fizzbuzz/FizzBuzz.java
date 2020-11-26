@@ -2,12 +2,12 @@ package tdd.fizzbuzz;
 
 public class FizzBuzz {
 
-    public static final int modulo_3 = 3;
-    public static final int modulo_5 = 5;
-    public static final int modulo_7 = 7;
-    public static final String FIZZ = "Fizz";
-    public static final String BUZZ = "Buzz";
-    public static final String WHIZZ = "Whizz";
+    private static final int modulo_3 = 3;
+    private static final int modulo_5 = 5;
+    private static final int modulo_7 = 7;
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String WHIZZ = "Whizz";
 
     public String countOff(int order){
         if(order % modulo_3 == 0){
