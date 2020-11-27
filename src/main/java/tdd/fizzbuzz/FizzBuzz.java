@@ -8,27 +8,21 @@ public class FizzBuzz {
     private static final String FIZZ = "Fizz";
     private static final String BUZZ = "Buzz";
     private static final String WHIZZ = "Whizz";
-    private static final String FIZZ_BUZZ = "FizzBuzz";
-    private static final String FIZZ_WHIZZ = "FizzWhizz";
-    private static final String BUZZ_WHIZZ = "BuzzWhizz";
-    private static final String FIZZ_BUZZ_WHIZZ = "FizzBuzzWhizz";
 
     public String countOff(int order) {
-        if (order % MODULO_3 == 0 && order % MODULO_5 == 0 && order % MODULO_7 == 0) {
-            return FIZZ_BUZZ_WHIZZ;
-        } else if (order % MODULO_3 == 0 && order % MODULO_5 == 0) {
-            return FIZZ_BUZZ;
-        } else if (order % MODULO_3 == 0 && order % MODULO_7 == 0) {
-            return FIZZ_WHIZZ;
-        } else if (order % MODULO_5 == 0 && order % MODULO_7 == 0) {
-            return BUZZ_WHIZZ;
-        } else if (order % MODULO_3 == 0) {
-            return FIZZ;
-        } else if (order % MODULO_5 == 0) {
-            return BUZZ;
-        } else if (order % MODULO_7 == 0) {
-            return WHIZZ;
+        StringBuilder message = new StringBuilder();
+        if (order % MODULO_3 == 0) {
+            message.append(FIZZ);
         }
-        return String.valueOf(order);
+        if (order % MODULO_5 == 0) {
+            message.append(BUZZ);
+        }
+        if (order % MODULO_7 == 0) {
+            message.append(WHIZZ);
+        }
+        if(message.length()==0){
+            return String.valueOf(order);
+        }
+        return message.toString();
     }
 }
